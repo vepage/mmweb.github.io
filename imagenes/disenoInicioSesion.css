@@ -1,0 +1,131 @@
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css";
+html{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+}
+
+section{
+  position: relative;
+  height: 100vh;
+}
+
+.split {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  background: #000;
+}
+
+
+section .login{
+  position: relative;
+  flex-grow: 2;
+  display: flex;
+  overflow: hidden;
+  transition: 1s;
+}
+section .login:nth-child(2){
+  background-image: url(design/fondoInicioSesion.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-grow: 4;
+}
+
+section .login:nth-child(1){
+  background: white;
+}
+
+.login-div{
+  width: 290px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.login-div h1{
+  float: left;
+  font-size: 30px;
+  border-bottom: 5px solid #E7A567;
+  margin-bottom: 50px;
+  padding: 13px 0;
+}
+
+.login-div a{
+  text-decoration: none;
+  color: black;
+  text-shadow: 0 0 1px black;
+}
+
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 2px solid #E7A567;
+}
+
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 20px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+
+
+.btn{
+  width: 100%;
+  background: none;
+  border: 2px solid #E7A567;
+  padding: 9px;
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 18px;
+  background-color: #E7A567;
+}
+
+#btn-c{
+  background: none;
+  border: 0px;
+  color: black;
+  padding: 0;
+  margin-top: 0;
+  font-size: 14.5px;
+  margin-bottom: 0;
+  text-shadow: 0 0 1px black;
+}
+
+.btn:hover{
+  background-color: #D49960;
+  transform-origin: left;
+  color: white;
+  transition: .5s;
+}
+
+#volver{
+  text-align: center;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}

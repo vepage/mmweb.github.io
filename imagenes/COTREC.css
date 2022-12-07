@@ -1,0 +1,178 @@
+html{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  text-decoration: none;
+  background-image: url(design/fondoCR.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+body:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.contenedorGeneral {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  background: linear-gradient(5deg, rgba(255, 255,255, 0.1),rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255,255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.42);
+  height: 100%;
+}
+
+.icons {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 5px
+}
+
+#iconsBasura:hover {
+  color: #EE4837;
+}
+
+#iconsMod:hover {
+  color: #E468FC;
+}
+
+.contenedorInsert {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255,255, 0.18);
+  box-shadow: 0 8px 70px 0 rgba(0, 0, 0, 0.42);
+  margin-right: 3PX;
+  width: 30%
+}
+
+.contenido {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.Guardar{
+  width: 50%;
+  height: 60px;+
+  border: none;
+  background: #5AEA24;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Guardar:hover {
+  background: #8FE86D;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+select {
+  height: 30px;
+  width: 70px;
+  padding-left: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+h1{
+
+  text-transform: uppercase;
+}
+
+.contenedorTabla {
+  display: flex;
+  flex-direction: column
+  color: white;
+  border: 1px solid rgba(255, 255,255, 0.18);
+  box-shadow: 0 8px 70px 0 rgba(0, 0, 0, 0.42);
+  text-align: CENTER;
+}
+
+.tablaRelleno {
+  height: 50%;
+  color: white;
+}
+
+.tabla {
+  color: white;
+}
+
+.tabla thead {
+  background-color: #4A4B49;
+  border: none;
+}
+
+.tabla thead tr th{
+  border: none;
+  border-radius: 15px 15px 0 0;
+  padding: 5px;
+  height: 40px;
+}
+
+table tbody tr td input{
+  border: none;
+  height: 35px;
+  text-align: center;
+  background: rgba(0, 0, 0, .4);
+  color: white;
+  width: 100%;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.a i {
+  width: 50px;
+  background: green;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.a{
+  width: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  text-decoration: none;
+
+}
+
+.a:hover{
+  background: grey;
+  cursor: pointer;
+}
+
+.AgregarE {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  height: 35px;
+}
+
+.AgregarE:hover {
+  background: #8FE86D;
+  color: white
+}

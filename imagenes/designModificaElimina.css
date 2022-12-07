@@ -1,0 +1,210 @@
+html{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  text-decoration: none;
+  background-image: url(design/fondoME.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+body:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.contenedor {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  background: linear-gradient(5deg, rgba(255, 255,255, 0.1),rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255,255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.42);
+  height: 100%;
+  color: white;
+  text-align: white;
+}
+
+.w {
+  color: white;
+}
+
+h2{
+  color: white;
+}
+
+.contenedor .row .busqueda {
+  padding-left: 80px;
+  color: white;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.contenedor .row .busqueda input {
+  border: none;
+  border-radius: 20px 0 0 20px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+.contenedor .row .busqueda button {
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  padding: 0;
+  margin-left: -9px;
+  border-radius: 0 20px 20px 0;
+}
+
+.contenedor .row .busqueda button:hover {
+  background: grey;
+  cursor: pointer;
+}
+
+.contenedor .row  button i {
+  text-align: center;
+}
+
+/* WARNING: AQUÍ COMIENZA EL DISEÑO DE LA TABLA */
+.contenedorTabla {
+  width: 100%;
+}
+
+.tabla {
+  position: absolute;
+  color: white;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tabla thead {
+  background-color: #4A4B49;
+  border: none;
+}
+
+
+.tabla thead tr th{
+  border: none;
+  border-radius: 15px 15px 0 0;
+  padding: 5px;
+  height: 40px;
+}
+
+table tbody tr td input{
+  border: none;
+  height: 35px;
+  text-align: center;
+  background: rgba(0, 0, 0, .4);
+  color: white;
+  width: 100%;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+
+table tbody tr td input:hover{
+  background: #ACADAB;
+}
+
+.a i {
+  width: 50px;
+  background: green;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+}
+
+#add{
+  border-radius: 50%;
+  margin-left: 3px;
+  color: white;
+  padding: 0;
+  background-color: #8FE86D;
+  margin-top: 1px;
+}
+
+#add:hover{
+  background: #47C01A;
+  transform: scale(1.06);
+}
+
+.a{
+  width: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  background: black;
+  color: white;
+  text-decoration: none;
+
+}
+
+#verTodo {
+    margin-left: 850px;
+}
+
+#pdf {
+  width: 100%;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: white;
+}
+
+#pdf:hover {
+  background: #013ADF;
+  transform: scale(1.02);
+}
+
+.a:hover{
+  background: grey;
+  cursor: pointer;
+}
+
+.icons {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 5px
+}
+
+#iconsBasura:hover {
+  color: #EE4837;
+}
+
+#iconsMod:hover {
+  color: #E468FC;
+}
+
+#registrar {
+  width: 55px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  background: white;
+
+}
+
+#registrar:hover {
+  color: white;
+  background: #8FE86D;
+}

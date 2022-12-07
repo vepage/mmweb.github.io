@@ -1,0 +1,107 @@
+html{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: verdana;
+  text-decoration: none;
+  background-image: url(design/fondoAC.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+body:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.contenedor {
+  background: linear-gradient(135deg, rgba(255, 255,255, 0.1),rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255,255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.42);
+  width: 40%;
+  height: 80%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-decoration: none;
+}
+
+.formulario {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  text-align: center;
+}
+
+.formulario .titulo {
+  font-size: 33px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.formulario .entradas {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 80;
+}
+
+.formulario .entradas input {
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  margin-top: 2px;
+}
+
+.Guardar {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #eb8b83;
+  color: white;
+  height: 40px;
+}
+
+.Guardar:hover {
+  background-color: #cc9083;
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.contenedor a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 70;
+}
+
+.contenedor a:hover {
+  letter-spacing: 1px;
+  transition: 0.2s;
+  color: #6DE1E8;
+}

@@ -1,0 +1,270 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.completo {
+  position: absolute;
+  width: 80%;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255,255, 0.1),rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255,255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.27);
+  height: 70%;
+}
+
+.datos{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.datos h1 {
+  text-transform: uppercase;
+  padding: 20px;
+  color: #cc9083;
+}
+
+.datos h2 {
+  text-transform: uppercase;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+
+.botonesA a input{
+    width: 300px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 50px;
+}
+
+.datos form{
+    padding: 30px;
+}
+
+.datos form textarea{
+    border: NONE;
+    border-radius: 15PX;
+    height: 80PX;
+    padding: 15px;
+}
+
+.insertS{
+    border: NONE;
+    border-radius: 15PX;
+    height: 38px;
+    width: 150PX;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.insertS:hover{
+    background: #8FE86D;
+    color: white;
+}
+
+.op:hover{
+    background: #8FE86D;
+    color: white;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(design/fondoIndex.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo {
+  color: white;
+  font-size: 38px;
+}
+
+span {
+  color: #cc9083;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #eb8b83;
+  transition: .3s;
+}
+
+.InfoContacto {
+  border: none;
+  background-color: #ba956e;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+}
+
+.InfoContacto:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.container {
+  display: none;
+  background: #fff;
+  width: 410px;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#show:checked ~ .container {
+  display: block;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#disabled {
+  opacity: 0.3
+}
+
+.container .close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container .close-btn:hover {
+  color: red;
+}
+
+.container .text {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.container form .data {
+  height: 45px;
+  width: 100%;
+  margin: 40px 0;
+}
+
+label form .data {
+  font-size: 18px;
+}
+
+form .data input {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1px solid silver;
+}
+
+form .data input:focus {
+  border-color: #3498db;
+  border-bottom-width: 2px;
+}
+
+form .btn {
+  margin: 30px 0;
+  height: 45px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+form .btn .inner {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  z-index: -1;
+  transition: all 0.4s;
+  background: -webkit-linear-gradient(right,#fed664,#932f54)
+}
+
+form .btn:hover .inner {
+  left: 0;
+}
+
+form .btn button {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+form .signup-link {
+  text-align: center;
+}
+
+form .signup-link a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+form .signup-link a:hover {
+  text-decoration: underline;
+  color: #eb8b83;
+  transition: 0.4s;
+}

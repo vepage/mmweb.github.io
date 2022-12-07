@@ -1,0 +1,43 @@
+body{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height:100vH;
+  background-image: url(design/fondoAcerdaDe.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+
+
+
+}
+.ContenedorMision{
+  width: 100%;
+  height: 40vH;
+  background-color:rgba(0, 0, 0, 0.5);
+
+  display: block;
+  text-align: center;
+  font-size: 30PX;
+}
+
+.ContenedorVision{
+  width: 100%;
+  height: 40vH;
+  background-color:rgba(0, 0, 0, 0.5);
+
+
+  display: block;
+  text-align: center;
+  font-size: 30PX;
+}
+
+.Salir{
+  width: 120px;
+  height: 50px;
+  background-color: orange;
+  color: white;
+  margin-top: 10px;
+}
